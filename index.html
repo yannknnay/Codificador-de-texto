@@ -7,38 +7,37 @@
     <title>Codificador de Texto</title>
 </head>
 <body>
-
-    <header>
-        <img src="assets/logo.png" alt="Logo da Alura">
-        <h1>Codificador e Decodificador de texto</h1>
+    <header class="header">
+        <img src="assets/logo.png" alt="Logo da Alura" class="logo">
+        <h1>Codificador e Decodificador de Texto</h1>
     </header>
 
-    <main>
-        <section class="bloco_principal">
-            <label for="campo_texto">Digite seu texto</label>
-            <textarea id="campo_texto"></textarea>
+    <main class="main">
+        <section class="input-section">
+            <label for="input_text">Digite seu texto:</label>
+            <textarea id="input_text" placeholder="Digite seu texto"></textarea>
 
-            <div class="informativo">
-                <img src="assets/exclamacao.png" alt="Ponto de exclmação">
+            <div class="informative">
+                <img src="assets/exclamacao.png" alt="Ponto de exclamação" class="icon">
                 <p>Apenas letras minúsculas e sem acento!</p>
             </div>
 
-            <div class="botoes">
-                <button onclick="criptografar()">Criptografar</button>
-                <button onclick="descriptografar()">Descriptografar</button>
+            <div class="buttons">
+                <button id="crypt_btn">Criptografar</button>
+                <button id="decrypt_btn">Descriptografar</button>
             </div>
         </section>
 
-        <section class="resultado">
-            <img src="assets/personagem.png" alt="Personagem vendo um diamante">
-            <button onclick="copiar()">Copiar</button>
+        <section class="output-section">
+            <textarea id="output_text" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
+            <button id="copy_btn">Copiar</button>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Feito por Yann K. Jordão Leão em Agosto de 2024</p>
     </footer>
 
-    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
