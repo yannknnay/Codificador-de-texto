@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador de Texto</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo.png" alt="Logo da Alura">
+        <h1>Codificador e Decodificador de texto</h1>
+    </header>
+
+    <main>
+        <section class="bloco_principal">
+            <label for="campo_texto">Digite seu texto</label>
+            <textarea id="campo_texto"></textarea>
+
+            <div class="informativo">
+                <img src="assets/exclamacao.png" alt="Ponto de exclmação">
+                <p>Apenas letras minúsculas e sem acento!</p>
+            </div>
+
+            <div class="botoes">
+                <button onclick="criptografar()">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="resultado">
+            <img src="assets/personagem.png" alt="Personagem vendo um diamante">
+            <button onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito por Yann K. Jordão Leão em Agosto de 2024</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
