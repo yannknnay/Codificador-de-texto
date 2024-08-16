@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #E5E5E5;
+    color: #0A3871;
+    align-items: center;
+}
+
+footer {
+    background-color: #E5E5E5;
+    color: #0A3871;
+    align-items: center;
+}
