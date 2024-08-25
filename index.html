@@ -7,35 +7,45 @@
     <title>Codificador de Texto</title>
 </head>
 <body>
-    <header class="header">
-        <img src="assets/logo.png" alt="Logo da Alura" class="logo">
-        <h1>Codificador e Decodificador de Texto</h1>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="assets/logo.png" alt="Logo da Alura">
+            <h1 class="header__titulo">Codificador e Decodificador de Texto</h1>
+        </div>
     </header>
 
-    <main class="main">
-        <section class="input-section">
-            <label for="texto_entrada">Digite seu texto:</label>
-            <textarea id="texto_entrada" placeholder="Digite seu texto"></textarea>
+    <main>
+        <div class="main">
+            <section class="input-section">
+                <textarea class="texto_entrada" placeholder="Digite seu texto"></textarea>
+                    <div class="input-section__footer">
+                        <div class="input-section__footer__informativo">
+                            <img class="input-section__imagem" src="assets/exclamacao.png" alt="Ponto de exclamação">
+                            <span class="input-section__footer__span">Apenas letras minúsculas e sem acento!</span>
+                        </div>
 
-            <div class="informative">
-                <img src="assets/exclamacao.png" alt="Ponto de exclamação" class="icon">
-                <p>Apenas letras minúsculas e sem acento!</p>
-            </div>
-
-            <div class="buttons">
-                <button id="botao_criptografar">Criptografar</button>
-                <button id="botao_descriptografar">Descriptografar</button>
-            </div>
-        </section>
-
-        <section class="output-section">
-            <textarea id="texto_saida" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
-            <button id="botao_copiar">Copiar</button>
-        </section>
+                        <div class="input-section__buttons">
+                            <button class="botao_criptografar">Criptografar</button>
+                            <button class="botao_descriptografar">Descriptografar</button>
+                            <button class="botao_tema">Alternar Tema</button>
+                        </div>                        
+                    </div>
+    
+            </section>
+    
+            <section class="output-section">
+                    <img class="output-section__imagem" src="assets/personagem.png" alt="Personagem achando um tesouro">
+                    <textarea class="output-section__titulo" placeholder="Nenhuma mensagem encontrada"></textarea>
+                    <p class="output-section__paragrafo">Digite um texto que você deseja criptografar ou descriptografar</p>
+                    <button class="botao_copiar invisivel">Copiar</button>
+            </section>
+        </div>
     </main>
 
-    <footer class="footer">
-        <p>Feito por Yann K. Jordão Leão em Agosto de 2024</p>
+    <footer>
+        <div class="footer">
+            <p>Feito por Yann K. Jordão Leão em Agosto de 2024</p>
+        </div>
     </footer>
 
     <script src="script.js" defer></script>
