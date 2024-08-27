@@ -185,12 +185,19 @@ body,
     height: 67px;
     border-radius: 24px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .botao_criptografar {
     background-color: var(--color-secundaria);
     color: var(--color-primaria);
-    border-color: var(--cor-terciaria);
+    border-color: var(--color-primaria);
+}
+
+.botao_criptografar:hover {
+    background-color: transparent;
+    color: var(--color-secundaria);
+    border-color: var(--color-secundaria);
 }
 
 .botao_descriptografar,
@@ -199,6 +206,14 @@ body,
     background-color: transparent;
     color: var(--color-secundaria);
     border-color: var(--color-secundaria);
+}
+
+.botao_descriptografar:hover ,
+.botao_tema:hover,
+.botao_copiar:hover {
+    background-color: var(--color-secundaria);
+    color: var(--color-primaria);
+    border-color: var(--color-primaria);
 }
 
 .output-section {
